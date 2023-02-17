@@ -1,12 +1,16 @@
-/* The Builder pattern is used to create objects in "steps".Normally we will have functions or methods that
+/* The Builder pattern is used to create objects in "steps". Normally we will have functions or methods that
 add certain properties or methods to our object. */
 
 /* The cool thing about this pattern is that we separate the creation of properties and methods into
 different entities.
 
 If we had a class or a factory function, the object we instantiate will always have all the properties
- and methods declared in that class/factory. But using the builder pattern, we can create an object
- and apply to it only the "steps" we need, which is a more flexible approach. */
+and methods declared in that class/factory. But using the builder pattern, we can create an object
+and apply to it only the "steps" we need, which is a more flexible approach. */
+
+// The Builder design pattern allows us to separate the construction of objects from their representation.
+// Builder is a creational design pattern that lets you construct complex objects step by step.
+// The pattern allows you to produce different types and representations of an object using the same construction code.
 
 // We declare our objects
 const bug1 = {
@@ -15,7 +19,7 @@ const bug1 = {
 }
 
 const bug2 = {
-    name: "Martiniano Buggland",
+    name: "Marie bug",
     phrase: "Can't touch this! Na na na na..."
 }
 
@@ -35,4 +39,4 @@ addFlyingAbility(bug1)
 bug1.fly() // output: "Now Buggy McFly can fly!"
 
 addSpeechAbility(bug2)
-bug2.saySomething() // output: "Martiniano Buggland walks the walk and talks the talk!"
+bug2.saySomething() // output: "Marie bug walks the walk and talks the talk!"

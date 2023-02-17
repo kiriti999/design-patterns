@@ -1,3 +1,9 @@
+/* Consider an application where we have to create and use all types of vehicles.
+There are motor vehicles(cars, buses, trucks, motorcycles), railed vehicles(trains, trams),
+aircraft(airplanes, helicopters), and watercraft(ships, boats).
+
+Thus, instead of creating instances by calling the constructor of each class individually,
+we can implement the Factory pattern as follows: */
 
 class MotorVehicle { }
 class Aircraft { }
